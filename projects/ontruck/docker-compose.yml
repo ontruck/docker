@@ -72,7 +72,7 @@ services:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   interpolation:
-    image: 9c8ef4103d5c
+    image: pelias/interpolation:master
     container_name: pelias_interpolation
     user: "${DOCKER_USER}"
     restart: always
